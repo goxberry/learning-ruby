@@ -24,3 +24,12 @@ Error::
 
 Changing the ``http`` to ``https`` fixed the issue.
 
+Exercise 14
+===========
+
+Error::
+
+  ex14.rb:17:in `<main>': undefined local variable or method `computer' for main:Object (NameError)
+
+Totally forgot lines 14-17 of program. Adding those lines in the
+proper place fixed my issues.
