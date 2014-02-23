@@ -33,3 +33,19 @@ Error::
 
 Totally forgot lines 14-17 of program. Adding those lines in the
 proper place fixed my issues.
+
+Exercise 14, Extra Credit 3
+===========================
+
+Errors::
+
+  ex14-ec3.rb:2: undefined method `second' for []:Array (NoMethodError)
+  ex14-ec3.rb:6: undefined local variable or method `user' for main:Object (NameError)
+
+The first error came from a misunderstanding of Ruby. The `ARGV.first`
+construct is derived from `ARGV` being an `Array` object, and the
+`first` method of the `Array` class.
+
+The second error was careless; semantically, I was replacing the
+variable `user` with the variables `first_name` and `last_name` so
+that I would have two arguments to use in my script.
